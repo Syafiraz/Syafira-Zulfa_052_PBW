@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="unsika">
+            <h1>Selamat Datang di Website Singaperbangsa</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li> 
+        </ul>      
+    </nav>
+    
+    <div class="container">
+        <section class="content">
+            <form action="T3a.html" method="GET">
+                <h1>Form Pendaftaran</h1>
+                <div class="inputbox">
+                    <label class="a">Nama:</label>
+                    <input type="text" name="nama" required><br><br>
+                </div>
+                <div class="inputbox">
+                    <label class="a">E-mail:</label>
+                    <input type="email" name="email" required><br><br>
+                </div>
+                <div class="inputbox">
+                    <label class="a">Password:</label>
+                    <input type="password" name="password" required><br><br>
+                </div>
+                <div class="choose">
+                    <label class="b">Jenis Kelamin:</label><br>
+                    <input type="radio" name="gender" value="male"> Laki-laki
+                    <input type="radio" name="gender" value="female"> Perempuan<br><br>
+                </div>
+                <div class="choose">
+                    <label class="b">Hobi:</label><br>
+                    <input type="checkbox" name="hobi[]" value="musik"> Musik
+                    <input type="checkbox" name="hobi[]" value="olahraga"> Olahraga
+                    <input type="checkbox" name="hobi[]" value="membaca"> Membaca<br><br>
+                </div>
+                <div class="choose">
+                    <label class="b">Pilih Kota:</label>
+                    <select name="pilihan">
+                        <option value="">Pilih Kota</option>
+                        <option value="1">Jakarta</option>
+                        <option value="2">Bekasi</option>
+                        <option value="3">Bandung</option>
+                        <option value="4">Karawang</option>
+                    </select><br><br>
+                </div>
+                <div class="inputbox">
+                    <label class="b">Pesan Tambahan:</label>
+                    <textarea name="komentar" rows="4" cols="50" placeholder="Masukkan komentar Anda"></textarea>
+                </div>
+                <button type="submit">Daftar</button>
+            </form>
+        </section>
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.</p>
+        </aside>
+    </div>
+  
+    <footer>
+        <p>&copy; 2024 Halaman Web Singaperbangsa. Dibuat dengan CSS.</p>
+    </footer>
+</body>
+</html>
