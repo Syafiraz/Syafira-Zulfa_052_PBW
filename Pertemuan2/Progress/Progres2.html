@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+</head>
+<body>
+    <h1>Selamat Datang!</h1>
+    
+    <form action="" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="5" maxlength="20" placeholder="Masukkan username">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Masukkan email">
+        
+        <label for="age">Umur:</label>
+        <input type="number" id="age" name="age" min="18" max="60" placeholder="Masukkan umur">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Masukkan password">
+        
+        <label for="komentar">Komentar:</label>
+        <textarea id="komentar" name="komentar" rows="4" cols="50" placeholder="Masukkan komentar Anda"></textarea>
+        
+        <label for="pilihan">Pilihan:</label>
+        <select id="pilihan" name="pilihan">
+            <option value="1">Pilihan 1</option>
+            <option value="2">Pilihan 2</option>
+            <option value="3">Pilihan 3</option>
+        </select>
+        
+        <fieldset>
+            <legend>Jenis Kelamin:</legend>
+            <label><input type="radio" name="gender" value="male"> Laki-laki</label>
+            <label><input type="radio" name="gender" value="female"> Perempuan</label>
+            <label><input type="radio" name="gender" value="other"> Lainnya</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Hobi:</legend>
+            <label><input type="checkbox" name="hobi" value="musik"> Musik</label>
+            <label><input type="checkbox" name="hobi" value="olahraga"> Olahraga</label>
+            <label><input type="checkbox" name="hobi" value="membaca"> Membaca</label>
+            <label><input type="checkbox" name="hobi" value="traveling"> Traveling</label>
+        </fieldset>
+        
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="alert('Halo! Selamat datang!')">Klik Saya</button>
+    </form>
+    
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Pilih File:</label>
+        <input type="file" id="file" name="file">
+        <button type="submit">Unggah</button>
+    </form>
+</body>
+</html>
