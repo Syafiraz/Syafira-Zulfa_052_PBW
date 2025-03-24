@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="judul">Selamat Datang</h1>
+        <button onclick="ubahTeks()">Ubah Teks</button>
+        <button onclick="tampilkanAlert()">Klik Saya</button>
+
+        <h2>Penjumlahan Angka</h2>
+        <div class="input-container">
+            <label for="angka1">Masukkan Angka 1:</label>
+            <input type="number" id="angka1" placeholder="Masukkan angka">
+        </div>
+        
+        <div class="input-container">
+            <label for="angka2">Masukkan Angka 2:</label>
+            <input type="number" id="angka2" placeholder="Masukkan angka">
+        </div>
+        
+        <button class="hitung-btn" onclick="hitungJumlah()">Hitung</button>
+        <p id="hasil"></p>
+    </div>
+
+    <script src="index.js"></script> <!-- Memanggil file eksternal -->
+</body>
+</html>

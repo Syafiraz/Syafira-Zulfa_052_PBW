@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Huruf Mutu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cek Huruf Mutu</h2>
+
+        <div class="form-group">
+            <label for="nim" class="juduls">NIM:</label>
+            <input type="number" id="nim" placeholder="Masukkan NIM" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+        </div>
+
+        <div class="form-group">
+            <label for="nilai" class="juduls">Nilai Mata Kuliah:</label>
+            <input type="number" id="nilai" placeholder="Masukkan Nilai (0-100)">
+        </div>
+
+        <button onclick="cekNilai()">Cek Nilai</button>
+
+        <p id="output" class="hasil"></p>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
